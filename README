@@ -1,0 +1,51 @@
+Convert::ASCII-EBCDIC
+
+This program is Copyright (c) 1996 Chris Leach.
+
+This program is free software; you can use, distribute and/or
+modify it under the same terms as Perl itself.
+
+
+DESCRIPTION
+-----------
+
+This module provides two functions ascii2ebcdic and ebcdic2ascii for
+converting a string from/to ASCII to/from EBCDIC.
+
+
+WARNING
+-------
+
+This release is considered alpha code. Handle with the appropriate care.
+It only implements one possible translation table.
+
+
+BUILDING THE MODULE
+-------------------
+
+    perl Makefile.PL
+    make
+    make test
+
+
+INSTALLATION
+------------
+
+    make install
+
+
+PORTABILITY
+-----------
+
+This module has only been tested on AS400/OS400 V3R7 and
+Sun/Solaris 2.5.1.  Please let me know, if there are some fixes necessary
+for other systems. Thank you.
+
+The tools directory contains programs for producing the translations
+tables needed by tr. Use mkrtbl.pl on you EBCDIC system transfer the
+resuling file with translation to and ASCII system. Run mkctbl.pl and
+copy the resulting parts into the tr statements.
+
+
+Enjoy,
+Chris Leach <leachcj@bp.com>

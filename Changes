@@ -1,0 +1,14 @@
+Revision history for Perl extension Convert::EBCDIC.
+
+0.04  Mon Sep 9 09:14:31 EST 1997
+	- Changed module name from Convert::ASCCII_EBCDIC to Convert::EBCDIC.
+
+0.03  Thu Aug  7 13:23:59 EST 1997
+	- add OO interface
+
+0.02  Thu Aug  7 11:43:59 EST 1997
+	- now use tr rather than map and a table
+
+0.01  Mon Feb 10 17:02:25 EST 1997
+	- original version
+
